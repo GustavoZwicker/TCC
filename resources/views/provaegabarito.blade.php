@@ -13,9 +13,9 @@
                 <nav id=menu>
                     <div class=links>
                         <a href= "/welcome"><c>Home</c></a>
-                        <a href= "/provaegabarito">Universidades</a>
-                        <a href= "/welcome">Redações</a>
-                        <a href= "/welcome">Quem Somos</a>
+                        <a href= "/universidades">Universidades</a>
+                        <a href= "/redacao">Redações</a>
+                        <a href= "/quemsomos">Quem Somos</a>
                         <a href= "/welcome">Cadastro/Login</a>
                         <input type="text" placeholder="Pesquise no Vestibulando">
                         <input type="submit" value="">
@@ -51,11 +51,11 @@
                 </div>
                 <div class="textoprova"> 
                     <p>Prova</p> 
-                    <p><span style="color: #ccccccff;">Prova2019.pdf</span></p>
+                    <p><a href="/img/USP2019p.pdf" download>Prova2019.pdf</a></p>
                 </div>
                 <div class="textogabarito"> 
                     <p>Gabarito</p> 
-                    <p><span style="color: #ccccccff;">Prova2019.pdf</span></p>
+                    <p><a href="/img/USP2019g.pdf">Prova2019.pdf</a></p>
                 </div>
                 <img class="menu2" src="/img/menu1.png">
                 <div class="textomenu2">
@@ -63,11 +63,11 @@
                 </div>
                 <div class="textoprova2"> 
                     <p>Prova</p> 
-                    <p><span style="color: #ccccccff;">Prova2018.pdf</span></p>
+                    <p><a href="/img/USP2018p.pdf">Prova2018.pdf</a></p>
                 </div>
                 <div class="textogabarito2"> 
                     <p>Gabarito</p> 
-                    <p><span style="color: #ccccccff;">Prova2018.pdf</span></p>
+                    <p><a href="/img/USP2019g.pdf" download="">Prova2018.pdf</a></p>
                 </div>
             </div>         
             </div>
