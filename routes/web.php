@@ -36,3 +36,7 @@ Route::get('/redacao',function(){
 Route::get('/universidades',function(){
     return view('universidades');
 });
+
+Route::get('/redacoes',function(){
+    return view('redacoes');
+});
