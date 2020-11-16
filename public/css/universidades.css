@@ -157,7 +157,7 @@ input[type=submit]{
     height: 310px;
     border:  10px solid #488123ff;
     top: 38px;
-        margin: auto; 
+    margin: auto; 
     z-index: 2;}
 
 .img img{
@@ -185,9 +185,11 @@ input[type=checkbox].css-checkbox{ display: none; }
     display: flex;
     opacity: 50%;
     height:131px;
+    position: initial;
     background-image: url(/img/estrelinha.png);
     background-repeat: no-repeat;
-    background-size: contain;
+
+    
 }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {
