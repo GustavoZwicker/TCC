@@ -94,7 +94,7 @@ input[type=text]{
     position: absolute;
 }
 
-input[type=submit]{
+#cabecalho input[type=submit]{
     background:url("/img/lupa.png");
     width: 19px;
     height: 24px;
@@ -103,10 +103,6 @@ input[type=submit]{
     position: absolute;
     margin-left: 38.5%;
     margin-top: 4px;
-}
-
-#slider img{
-    margin: auto;
 }
 
 #rodape{
@@ -154,51 +150,14 @@ input[type=submit]{
 #retangulo{
     width: 975px;
     background-color: #5aa02cff;
-    height: 310px;
+    height: 410px;
     border:  10px solid #488123ff;
     top: 38px;
     margin: auto; 
     z-index: 2;}
 
-.img img{
-    border:  5px solid  #d6e6cbff;
-    margin-top: -270px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.univer{
+h1{ 
     text-align: center;
-    margin-left: 430px;
-    margin-top: 20px;
-    font-size: 30px;
-    font-family: Arial;
-    color: white;
-}
-
-input[type=checkbox].css-checkbox{ display: none; }
-
-.css-label{
-    margin-left: 1160px;
-    margin-top:-131px;
-    display: flex;
-    opacity: 50%;
-    height:131px;
-    position: initial;
-    background-image: url(/img/estrelinha.png);
-    background-repeat: no-repeat;
-
-    
-}
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-    background-position: 0 0;
-    background-image: url(/img/estrelinha.png);
-    opacity: 100%;
-}
-
-a{
-font-style: bold;
-color:#3b691dff;
+    margin-top: 5px;
+    color:white;
 }

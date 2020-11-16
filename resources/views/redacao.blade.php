@@ -39,7 +39,7 @@
                 </div>
                 <div id=redretangulo>
                     <div id=redfix>
-                        <img src="/img/redacao.png" alt="imagem">
+                        <img src="/img/redacao_fuvest.png" alt="imagem">
                     </div>
                 </div>
             </div>
