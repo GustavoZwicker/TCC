@@ -5,9 +5,13 @@
 @section('stylesheet','/css/home.css')
 
 @section('content')
+
+<?php
+$teste = DB::select('select uniNome from Universidade where uniId =1');?>
                     <div id=sliderbg>
                         <a class=prev> <img src="/img/seta.png"> </a>
                             <div id=slider>
+                                <?php var_dump($teste)?>
                                 <ul class=slider>
                                     <li>
                                         <input type="radio" id="slide1" name="slide" checked>
