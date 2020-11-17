@@ -28,12 +28,20 @@
 }
 
 #menu {
-    width: 99,5%;   
-    height: 40px;
     position: absolute;
     margin-left: 8px;
     margin-right: auto; 
-    margin-top: -5px;
+    margin-top: 10px;
+    font-family: Yu Gothic;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none; 
+    margin-inline-end: 80px;
+}
+
+.input-group {
+    position: absolute;
+    margin-left: 1100px;
 }
 
 a{
@@ -45,16 +53,6 @@ a{
     margin-left: 30px;
     margin-top: 3px;
     vertical-align: middle;
-}
-
-.links a{
-    font-family: Yu Gothic;
-    color: #7ecd4bff;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none; 
-    margin-inline-end: 80px;
-
 }
 
 input[type=text]{
@@ -87,14 +85,14 @@ input[type=submit]{
 
 #rettop {
     width: 50%;
-    height: 30px;
+    height: 80px;
     margin: 0 auto;
     padding-top: 50px;  
 }
 
 #retescolha {
     width: 50%;
-    height: 150px;
+    height: 190px;
     background-color: #5aa02cff;
     margin: 0 auto;
     border: solid #488123ff;
@@ -169,8 +167,8 @@ input[type=submit]{
 }
 
 .textomenu {
-    margin-top: 5px;
-    margin-left: 65px;
+    margin-top: 8px;
+    margin-left: 58px;
     position: absolute;
     z-index: 3;
     color: black;
@@ -181,6 +179,7 @@ input[type=submit]{
 }
 
 .textoprova {
+    margin-top: 10px;
     margin-left: 30%;
     line-height: 0.6;
     position: absolute;
@@ -193,6 +192,7 @@ input[type=submit]{
 }
 
 .textogabarito {
+    margin-top: 10px;
     margin-left: 60%;
     line-height: 0.6;
     position: absolute;
@@ -206,8 +206,8 @@ input[type=submit]{
 
 
 .textomenu2 {
-    margin-top: 88px;
-    margin-left: 65px;
+    margin-top: 106px;
+    margin-left: 60px;
     position: absolute;
     z-index: 3;
     color: black;
@@ -218,7 +218,7 @@ input[type=submit]{
 }
 
 .textoprova2 {
-    margin-top: 85px;
+    margin-top: 95px;
     margin-left: 30%;
     line-height: 0.6;
     position: absolute;
@@ -231,7 +231,7 @@ input[type=submit]{
 }
 
 .textogabarito2 {
-    margin-top: 85px;
+    margin-top: 95px;
     margin-left: 60%;
     line-height: 0.6;
     position: absolute;
