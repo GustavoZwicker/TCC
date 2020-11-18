@@ -98,11 +98,13 @@
 
                         <label>Senha</label>
                         <input type="text" name="txtSenha" size="8" minlenght ="8" maxlength="70" /></br>
-
-                        <input type="submit" value="CADASTRAR" />
-                        </form>
                     </div>
-                        
+                    <center>
+                    <div class="botao">
+                        <input type="submit" value="CADASTRAR" />
+                    </div>
+                    </center>
+                        </form>
                     <div id=head-top> </div>
                     </div>
 

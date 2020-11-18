@@ -6,7 +6,7 @@
         <title>Vestibulando</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/custom.css" /> 
-        <link href="/css/universidades.css" rel="stylesheet">
+        <link href="/css/login.css" rel="stylesheet">
     </head>
     <body>
         <div id=tela>
@@ -24,19 +24,19 @@
                     <nav id=menu>
                         <ul class="navbar-nav mr-auto">
                          <li class="nav-item">
-                              <a class="nav-link" href="/home">Home</a>
+                              <a class="nav-link" href="#">Home</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="/universidades">Universidades</a>
+                             <a class="nav-link" href="#">Universidades</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="redacao">Redações</a>
+                              <a class="nav-link" href="#">Redações</a>
                             </li>
                          <li class="nav-item">
                              <a class="nav-link" href="#">Quem Somos</a>
                           </li>
                           <li class="nav-item">
-                                <a class="nav-link" href="login">Cadastro/Login</a>
+                                <a class="nav-link" href="#">Cadastro/Login</a>
                          </li>
                         </ul>
                     </nav>
@@ -53,72 +53,49 @@
             </header>
             </div>
             </div>
+
             <div id=content>
 
                     <div id=head-top> </div>
                     <div>
                     <div id=retangulo>
-                    <div class="univer">
-                    UNIVERSIDADE DE SÃO PAULO <p>(USP)</p>
-                    <p><br>Estado: <span style="color: #ccccccff;">São Paulo</span></p>
-                    <p><a href="http://127.0.0.1:8000/provaegabarito"> <div class="maisinfo"> MAIS INFORMAÇÕES </div></a> </p>
-                    </div>
+                    <h1>LOGIN</h1>
                     
-                    <div class=img>
-                    <img src="/img/usp_logo.jpg" width=400px height=260px></div>
-                    </div>
-                    
-                    <input id="checkboxid" type="checkbox" class="css-checkbox">
-                    <label for="checkboxid" class="css-label"></label>
-                    
-                    <div id=head-top2> </div>  
+                    <form action="" method="">
+                    <div class="categorias">
 
+                        <label>E-mail</label>
+                        <input type="text" name="txtEmail" size="70" maxlength="30" /></br></br>
+
+                        <label>Senha</label>
+                        <input type="text" name="txtSenha" size="8" minlenght ="8" maxlength="70" /></br></br>
+                        </div>
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-sm">
+                    <div class="botao">
+                    <input type="submit" value="  LOGIN  " />
+                    </div>
+                    </div>
+                    <div class="col-sm">
+                    Se cadastra
+                    </center>
+                    </div>
+                    </div>
+                    </div>
+                        </form>
+                        
                     <div id=head-top> </div>
-                    <div>
-                    <div id=retangulo>
-                    <div class="univer">
-                    UNIVERSIDADE DE SÃO PAULO <p>(USP)</p>
-                    <p><br>Estado: <span style="color: #ccccccff;">São Paulo</span></p>
-                    <p><a href="http://127.0.0.1:8000/provaegabarito"> <div class="maisinfo"> MAIS INFORMAÇÕES </div></a> </p>
                     </div>
-                    
-                    <div class=img>
-                    <img src="/img/usp_logo.jpg" width=400px height=260px></div>
-                    </div>
-                    
-                    <input id="checkboxid2" type="checkbox" class="css-checkbox">
-                    <label for="checkboxid2" class="css-label"></label>
-                    
-                    <div id=head-top2> </div>
 
-                    <div id=head-top> </div>
-                    <div>
-                    <div id=retangulo>
-                    <div class="univer">
-                    UNIVERSIDADE DE SÃO PAULO <p>(USP)</p>
-                    <p><br>Estado: <span style="color: #ccccccff;">São Paulo</span></p>
-                    <p><a href="http://127.0.0.1:8000/provaegabarito"> <div class="maisinfo"> MAIS INFORMAÇÕES </div></a> </p>
-                    </div>
-                    
-                    <div class=img>
-                    <img src="/img/usp_logo.jpg" width=400px height=260px></div>
-                    </div>
-                    
-                    <input id="checkboxid3" type="checkbox" class="css-checkbox">
-                    <label for="checkboxid3" class="css-label"></label>
-                    
-                    <div id=head-top2> </div>
-                
-            </div>   
-
-            <div id=rodape>
+                    <div id=rodape>
             <div class="row">
                 <div class="column"><div class=rodapeinfo><img src="/img/logo_r.png">
                 <br>Contato: gustavo.zwicker@etec.sp.gov.br</br></div></div>
                 <div class="column"><div class=rodapeinfo2>Copyright (c) - 2020 Vestibulando Informação e Vestibulares
                 <p>Todos os direitos reservados</p></div></div>
             </div>
-                </div>
+            </div>
             </div>
             <b></b>
         </div>
