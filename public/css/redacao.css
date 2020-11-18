@@ -85,7 +85,7 @@ input[type=submit]{
 #retangulo {
     position: relative;
     display:inline-block;
-    width: 50%;
+    width: 950px;
     height: 130px;
     background-color: #5aa02cff;
     margin-top: 80px;
@@ -174,7 +174,7 @@ h5 {
 #redretangulo {
     position: relative;
     display:inline-block;
-    width: 45%;
+    width: 860px;
     height: auto;
     background-color: rgb(229, 236, 225);
     margin-top: 10px;
