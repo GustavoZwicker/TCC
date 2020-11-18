@@ -7,75 +7,30 @@
     margin: auto;
 }
 
-#headerph {
-    width: 100%;
-    height: 124px;
-    position: relative;
+.navbar-light .navbar-nav .nav-link {
+    color: #7ecd4b;
+    font-weight: bolder;
+    font-family: Yu Gothic;
+    font-size: 20px;
 }
 
-#cabecalho {
+.navbar-light {
+    border-bottom: solid 6pt #7ecd4b;
+}
+
+.bg-dark-green {
+    background-color: #42513a;
+}
+
+#header {
     background-image: url("/img/cabecalho.png");
     background-color: white;
     background-size: 100%;
-    width: 100%;
-    height: 114px;
-    margin-top: -10px;
-    padding-top: 10px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-y: left;
-    position: sticky;
-}
-
-#menu {
-    position: absolute;
-    margin-left: 8px;
-    margin-right: auto; 
-    margin-top: 10px;
-    font-family: Yu Gothic;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none; 
-    margin-inline-end: 80px;
-}
-
-.input-group {
-    position: absolute;
-    margin-left: 1100px;
 }
 
 a{
     text-decoration: none;
     color: #ccccccff;
-}
-
-.links{
-    margin-left: 30px;
-    margin-top: 3px;
-    vertical-align: middle;
-}
-
-input[type=text]{
-    position: relative;
-    width: 40%;
-    height: 23px;
-    border: solid #5aa02cff;
-    background-color: white;
-    font-family: Nirmala UI;
-    font-size: 20px;
-    color: black;
-    position: absolute;
-}
-
-input[type=submit]{
-    background:url("/img/lupa.png");
-    width: 19px;
-    height: 24px;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 38.5%;
-    margin-top: 4px;
 }
 
 #content {

@@ -39,3 +39,7 @@ Route::get('/redacoes',function(){
 Route::get('/cadastro',function(){
     return view('cadastro');
 });
+
+Route::get('/ex',function(){
+    return view('ex');
+});

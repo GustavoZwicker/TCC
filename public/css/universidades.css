@@ -105,10 +105,6 @@ input[type=submit]{
     margin-top: 4px;
 }
 
-#slider img{
-    margin: auto;
-}
-
 #rodape{
     width: 100%;
     height: 70px;
@@ -116,6 +112,7 @@ input[type=submit]{
     align-self: flex-start;
     font-family: Arial;
     font-size: 12px;
+    margin-top: 50px;
     color: white;
     
 }
@@ -146,6 +143,11 @@ input[type=submit]{
   
 }
 
+.input-group {
+    position: absolute;
+    margin-left: 1100px;
+}
+
 .head-top2{
     padding-top: 10px;
   
@@ -162,7 +164,7 @@ input[type=submit]{
 
 .img img{
     border:  5px solid  #d6e6cbff;
-    margin-top: -270px;
+    margin-top: -305px;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
@@ -180,7 +182,7 @@ input[type=submit]{
 input[type=checkbox].css-checkbox{ display: none; }
 
 .css-label{
-    margin-left: 1160px;
+    margin-left: 1152px;
     margin-top:-131px;
     display: flex;
     opacity: 50%;
