@@ -1,4 +1,4 @@
-tela {
+#tela {
     width: 100%;
     height: auto;
     margin-left: -15px;
@@ -27,27 +27,31 @@ tela {
 }
 
 #menu {
-    width: 99,5%;   
-    height: 40px;
     position: absolute;
     margin-left: 8px;
     margin-right: auto; 
-    margin-top: -5px;
+    margin-top: 10px;
+    font-family: Yu Gothic;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none; 
+    margin-inline-end: 80px;
+}
+
+.input-group {
+    position: absolute;
+    margin-left: 1100px;
+}
+
+a{
+    text-decoration: none;
+    color: #ccccccff;
 }
 
 .links{
     margin-left: 30px;
     margin-top: 3px;
     vertical-align: middle;
-}
-
-.links a{
-    font-family: Yu Gothic;
-    color: #7ecd4bff;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none; 
-    margin-inline-end: 80px;
 }
 
 input[type=text]{
