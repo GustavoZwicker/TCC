@@ -24,19 +24,19 @@
                     <nav id=menu>
                         <ul class="navbar-nav mr-auto">
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Home</a>
+                              <a class="nav-link" href="/home">Home</a>
                          </li>
                          <li class="nav-item">
-                             <a class="nav-link" href="#">Universidades</a>
+                             <a class="nav-link" href="/universidades">Universidades</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="#">Redações</a>
+                              <a class="nav-link" href="/redacoes">Redações</a>
                             </li>
                          <li class="nav-item">
                              <a class="nav-link" href="#">Quem Somos</a>
                           </li>
                           <li class="nav-item">
-                                <a class="nav-link" href="#">Cadastro/Login</a>
+                                <a class="nav-link" href="/login">Cadastro/Login</a>
                          </li>
                         </ul>
                     </nav>
@@ -70,6 +70,7 @@
                         <label>Senha</label>
                         <input type="text" name="txtSenha" size="8" minlenght ="8" maxlength="70" /></br></br>
                         </div>
+                    <center>
                     <div class="container">
                     <div class="row">
                     <div class="col-sm">
@@ -78,11 +79,11 @@
                     </div>
                     </div>
                     <div class="col-sm">
-                    Se cadastra
+                    <a class="cadastrese" href="/cadastro">Não tem um conta? Cadastre-se </a>
+                    </div>
+                    </div>
+                    </div>
                     </center>
-                    </div>
-                    </div>
-                    </div>
                         </form>
                         
                     <div id=head-top> </div>

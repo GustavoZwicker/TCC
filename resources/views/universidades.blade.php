@@ -30,13 +30,13 @@
                              <a class="nav-link" href="/universidades">Universidades</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="redacao">Redações</a>
+                              <a class="nav-link" href="/redacoes">Redações</a>
                             </li>
                          <li class="nav-item">
                              <a class="nav-link" href="#">Quem Somos</a>
                           </li>
                           <li class="nav-item">
-                                <a class="nav-link" href="login">Cadastro/Login</a>
+                                <a class="nav-link" href="/login">Cadastro/Login</a>
                          </li>
                         </ul>
                     </nav>
