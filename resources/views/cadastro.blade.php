@@ -61,7 +61,7 @@
                     <div id=retangulo>
                     <h1> REGISTRO </h1>
                     
-                    <form action="" method="">
+                    <form action="registro" method="POST">
                     <div class="categorias">
                         <label>Nome</label>
                         <input type="text" name="txtNome" size="70" maxlength="30" /><br>
