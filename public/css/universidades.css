@@ -112,7 +112,7 @@ input[type=submit]{
     align-self: flex-start;
     font-family: Arial;
     font-size: 12px;
-
+    margin-top: 50px;
     color: white;
     
 }

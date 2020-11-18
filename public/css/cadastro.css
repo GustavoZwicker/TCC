@@ -112,6 +112,7 @@ input[type=text]{
     align-self: flex-start;
     font-family: Arial;
     font-size: 12px;
+    margin-top: 50px;
     color: white;
     
 }
@@ -160,4 +161,43 @@ h1{
     text-align: center;
     margin-top: 5px;
     color:white;
+}
+
+.input-group {
+    position: absolute;
+    margin-left: 1100px;
+}
+
+.categorias {
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.categorias input[type=text] {
+    margin-left: 20px;
+    height: 40px;
+    width: 830px;
+}
+
+.categorias input[type=date] {
+    margin-left: 20px;
+    height: 40px;
+    width: 665px;
+}
+
+.categorias select[name ="txtGenero"] {
+    margin-left: 20px;
+    height: 40px;
+    width: 810px;
+}
+
+.categorias select[name ="txtEscolaridade"] {
+    margin-left: 20px;
+    height: 40px;
+    width: 690px;
+}
+
+.categorias input [type="submit"] {
+    margin-left: 4000px;
 }
