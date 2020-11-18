@@ -50,8 +50,9 @@
                  </form>
                 </div>
             </nav>
-            </header>
             </div>
+            </header>
+
 
             <div id = content>
                 <div>
