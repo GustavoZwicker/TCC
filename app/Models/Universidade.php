@@ -9,4 +9,5 @@ class Universidade extends Model
 {
     use HasFactory;
     protected $table = 'universidades';
+    
 }

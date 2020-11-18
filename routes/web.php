@@ -17,6 +17,11 @@ use App\Http\Controllers\HomeController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/{id}', [HomeController::class, 'show']);
 
+
+Route::get('/home',function(){
+    return view('home');
+});
+
 Route::get('/welcome',function(){
     return view('welcome');
 });
