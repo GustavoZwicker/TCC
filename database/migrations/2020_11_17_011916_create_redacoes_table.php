@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRedacaosTable extends Migration
+class CreateRedacoesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,15 @@ class CreateRedacaosTable extends Migration
      */
     public function up()
     {
-        Schema::create('redacaos', function (Blueprint $table) {
+        Schema::create('redacoes', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nome');
             $table->integer('ano');
             $table->integer('nota');
             $table->string('caminho');
-            $table->integer('universidade_id')->unsigned();
-            $table->foreign('universidade_id')->references('id')->on('Universidade');
+            $table->integer('universidades_id')->unsigned();
+            $table->foreign('universidades_id')->references('id')->on('universidades');
         });
     }
 
@@ -32,6 +32,6 @@ class CreateRedacaosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('redacaos');
+        Schema::dropIfExists('redacoes');
     }
 }

@@ -13,7 +13,7 @@ class CreateUniversidadesTable extends Migration
      */
     public function up()
     {
-        Schema::create('universidade', function (Blueprint $table) {
+        Schema::create('universidades', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('sigla');
@@ -32,6 +32,6 @@ class CreateUniversidadesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('universidade');
+        Schema::dropIfExists('universidades');
     }
 }
