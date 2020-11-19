@@ -42,6 +42,10 @@ Route::get('/redacoes',function(){
     return view('redacoes');
 });
 
+Route::get('/login',function(){
+    return view('login');
+});
+
 Route::get('/ex',function(){
     return view('ex');
 });

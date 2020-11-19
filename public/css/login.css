@@ -151,7 +151,7 @@ input[type=text]{
 #retangulo{
     width: 975px;
     background-color: #5aa02cff;
-    height: 410px;
+    height: 300px;
     border:  10px solid #488123ff;
     top: 38px;
     margin: auto; 
@@ -171,6 +171,10 @@ h1{
 .categorias {
     margin-left: 20px;
     color: white;
+    font-size: 25px;
+}
+
+.botao {
     font-size: 25px;
 }
 
@@ -198,6 +202,8 @@ h1{
     width: 690px;
 }
 
-.botao {
-    font-size: 25px;
+.cadastrese{    
+    font-size: 22px;
+    font-style:none;
+    color: white;
 }
