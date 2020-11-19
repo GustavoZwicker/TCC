@@ -190,8 +190,8 @@ input[type=checkbox].css-checkbox{ display: none; }
     position: initial;
     background-image: url(/img/estrelinha.png);
     background-repeat: no-repeat;
+    background-size: contain;
 
-    
 }
 
 input[type=checkbox].css-checkbox:checked + label.css-label {

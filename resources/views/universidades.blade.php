@@ -30,7 +30,7 @@
                              <a class="nav-link" href="/universidades">Universidades</a>
                          </li>
                          <li class="nav-item">
-                              <a class="nav-link" href="/redacoes">Redações</a>
+                              <a class="nav-link" href="/redacoe">Redações</a>
                             </li>
                          <li class="nav-item">
                              <a class="nav-link" href="#">Quem Somos</a>
