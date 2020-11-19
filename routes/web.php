@@ -46,6 +46,10 @@ Route::get('/login',function(){
     return view('login');
 });
 
+Route::get('/quemsomos',function(){
+    return view('quemsomos');
+});
+
 Route::get('/ex',function(){
     return view('ex');
 });

@@ -173,19 +173,3 @@ h1{
     color: white;
     font-size: 25px;
 }
-
-.botao {
-    font-size: 25px;
-}
-
-.categorias input[type=text] {
-    margin-left: 20px;
-    height: 40px;
-    width: 830px;
-}
-
-.cadastrese{    
-    font-size: 22px;
-    font-style:none;
-    color: white;
-}
