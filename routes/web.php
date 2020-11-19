@@ -18,7 +18,7 @@ use App\Http\Controllers\Auth\RegisterController;
 Route::view('cadastro','cadastro');
 Route::post('cadastro',[RegisterController::class,'create']);
 
-Route::get('/home',function(){
+Route::get('/',function(){
     return view('home');
 });
 

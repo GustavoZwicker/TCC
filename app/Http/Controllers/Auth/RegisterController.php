@@ -5,9 +5,12 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
+use App\Http\Controllers\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Auth\Middleware\Authenticate;
 
 class RegisterController extends Controller
 {
@@ -23,6 +26,14 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+
+    protected function redirectTo()
+    {
+        if (auth()->user()->role == 'admin') {
+            return '/admin';
+        }
+        return '/home';
+    }
 
     /**
      * Where to redirect users after registration.
@@ -62,14 +73,15 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-        protected function create(array $data)
+        protected function create(Request $data)
         {
             return User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'genero' => $data['genero'],
                 'data_de_nasc' => $data['data_de_nasc'],
-                'password' => Hash::make($data['password']),
+                'password' => Hash::make($data['password'])
             ]);
+            return redirect()->intended('home');
         }
     }

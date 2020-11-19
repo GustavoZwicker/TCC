@@ -60,8 +60,9 @@
                     <div>
                     <div id=retangulo>
                     <h1> REGISTRO </h1>
-                    
+                
                     <form action="cadastro" method="POST">
+                        @csrf
                     <div class="categorias">
                         <label>Nome</label>
                         <input type="text" name="name" size="70" maxlength="30" /><br>
