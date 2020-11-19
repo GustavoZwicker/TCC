@@ -1,49 +1,23 @@
-@extends('template')
-
-@section('title','Home')
-
-@section('stylesheet','/css/home.css')
+@extends('layouts.app')
 
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-                    <div id=sliderbg>
-                        <a class=prev> <img src="/img/seta.png"> </a>
-                            <div id=slider>
-                                <ul class=slider>
-                                    <li>
-                                        <input type="radio" id="slide1" name="slide" checked>
-                                        <label for="slide1"></label>
-                                        <img src="/img/img1.png" width=calc(100%/(1006/360))px height=360px>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="slide2" name="slide">
-                                        <label for="slide2"></label>
-                                        <img src="/img/img2.png" width=calc(100%/(1024/360))px height=360px>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="slide3" name="slide">
-                                        <label for="slide3"></label>
-                                        <img src="/img/img3.png" width=calc(100%/(1006/360))px height=360px>
-                                    </li>
-                                </ul>
-                            </div>
-                        <a class=next><img src="/img/seta.png"> </a>
-                    </div>
-                    <div id=row>
-                        <div id=colu1>
-                            <img class=coluimg src="/img/unesplogo.png">
-                            <h1>Universidade Estadual <br>Paulista</    br></h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
                         </div>
-                        <div id=colu2>
-                            <img class=coluimg src="/img/unesplogo.png">
-                            <h1>Universidade Estadual Paulista</h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
-                        </div>
-                        <div id=colu3>
-                            <img class=coluimg src="/img/unesplogo.png">
-                            <h1 class=shit>Universidade Estadual Paulista</h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
-                        </div>
-                    </div>
+                    @endif
+
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

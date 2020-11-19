@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/{id}', [HomeController::class, 'show']);
-
+Route::view('cadastro','cadastro');
+Route::post('cadastro',[RegisterController::class,'create']);
 
 Route::get('/home',function(){
     return view('home');
@@ -41,10 +41,15 @@ Route::get('/universidades',function(){
 Route::get('/redacoes',function(){
     return view('redacoes');
 });
-Route::get('/cadastro',function(){
-    return view('cadastro');
-});
 
 Route::get('/ex',function(){
     return view('ex');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

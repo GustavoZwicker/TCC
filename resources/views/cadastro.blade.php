@@ -61,45 +61,29 @@
                     <div id=retangulo>
                     <h1> REGISTRO </h1>
                     
-                    <form action="registro" method="POST">
+                    <form action="cadastro" method="POST">
                     <div class="categorias">
                         <label>Nome</label>
-                        <input type="text" name="txtNome" size="70" maxlength="30" /><br>
+                        <input type="text" name="name" size="70" maxlength="30" /><br>
 
                         <label>E-mail</label>
-                        <input type="text" name="txtEmail" size="70" maxlength="30" /><br>
+                        <input type="text" name="email" size="70" maxlength="30" /><br>
 
                         <label>Gênero</label>
                         
-                        <select name ="txtGenero">
-                        <option value ="txtMasculino">Masculino</option>
-                        <option value ="txtFeminino">Feminino</option>
-                        <option value ="txtNaoBinario">Não Binário</option>
-                        <option value ="txtInterSex">InterSex</option>
-                        <option value ="txtOutro">Outro</option>
-                        <option value ="txtNenhum"selected>Prefiro não dizer</option>
+                        <select name ="genero">
+                        <option value ="1">Masculino</option>
+                        <option value ="2">Feminino</option>
+                        <option value ="3">Outro</option>
                         </select></br>
 
                         <label>Data de Nascimento</label>
-                        <input type="date" name="txtData" size="50" maxlength="10" /><br>
-                        
-                        <label>Grau de Instrução</label>
-                        <select name ="txtEscolaridade">
-                        <option value ="txtEducacaoInfantilIncompleto">Educação infantil incompleta</option>
-                        <option value ="txtEducacaoInfantil">Educação infantil</option>
-                        <option value ="txtFundamentalIncompleto">Fundamental incompleto</option>
-                        <option value ="txtFundamental">Fundamental</option>
-                        <option value ="txtEnsino MédioINcompleto">Ensino médio incompleto</option>
-                        <option value ="txtEnsino Médio">Ensino médio</option>
-                        <option value ="txtSuperior">Superior(Graduação)</option>
-                        <option value ="txtMestrado">Mestrado</option>
-                        <option value ="txtNenhum"selected>Nenhum</option>
-                        </select></br>
+                        <input type="date" name="data_de_nasc" size="50" maxlength="10" /><br>
 
                         <label>Senha</label>
-                        <input type="text" name="txtSenha" size="8" minlenght ="8" maxlength="70" /></br>
+                        <input type="password" name="password" size="8" minlenght ="8" maxlength="70" /></br>
 
-                        <input type="submit" value="CADASTRAR" />
+                        <input type="submit" value="CADASTRAR"/>
                         </form>
                     </div>
                         
