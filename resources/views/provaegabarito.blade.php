@@ -28,19 +28,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Universidades</a>
+                        <a class="nav-link" href="universidades">Universidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Redações</a>
+                        <a class="nav-link" href="redacoes">Redações</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quem Somos</a>
+                        <a class="nav-link" href="quemsomos">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cadastro/Login</a>
+                        <a class="nav-link" href="login">Cadastro/Login</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
