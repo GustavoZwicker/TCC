@@ -27,14 +27,6 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
-    protected function redirectTo()
-    {
-        if (auth()->user()->role == 'admin') {
-            return '/admin';
-        }
-        return '/home';
-    }
-
     /**
      * Where to redirect users after registration.
      *
@@ -64,6 +56,8 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'genero' => ['required', 'integer', 'min:8', 'confirmed'],
+            'data_de_nasc' => ['required', 'date', 'min:8', 'confirmed'],
         ]);
     }
 
@@ -75,7 +69,7 @@ class RegisterController extends Controller
      */
         protected function create(Request $data)
         {
-            return User::create([
+            User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
                 'genero' => $data['genero'],
@@ -84,4 +78,4 @@ class RegisterController extends Controller
             ]);
             return redirect()->intended('home');
         }
-    }
+}

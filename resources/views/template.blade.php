@@ -19,6 +19,9 @@
                         <a href= "/welcome">Redações</a>
                         <a href= "/welcome">Quem Somos</a>
                         <a href= "/welcome">Cadastro/Login</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/logout">Logout</a>
+                     </li>
                         <input type="text" placeholder="Pesquise no Vestibulando">
                         <input type="submit" value="">
 

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+    
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,6 +39,7 @@
                           <li class="nav-item">
                                 <a class="nav-link" href="/login">Cadastro/Login</a>
                          </li>
+                         
                         </ul>
                     </nav>
                     <form class="form-inline my-2 my-lg-0">
@@ -61,14 +63,15 @@
                     <div id=retangulo>
                     <h1>LOGIN</h1>
                     
-                    <form action="" method="">
+                    <form action="POST" method="{{ route__('login')}}">
+                    @csrf
                     <div class="categorias">
-
+                            
                         <label>E-mail</label>
-                        <input type="text" name="txtEmail" size="70" maxlength="30" /></br></br>
+                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         <label>Senha</label>
-                        <input type="text" name="txtSenha" size="8" minlenght ="8" maxlength="70" /></br></br>
+                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                         </div>
                     <center>
                     <div class="container">

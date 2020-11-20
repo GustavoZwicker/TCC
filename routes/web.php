@@ -14,6 +14,10 @@ use App\Http\Controllers\Auth\RegisterController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('login','login');
+Route::post('user',[LoginController::class,'login']);
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::view('cadastro','cadastro');
 Route::post('cadastro',[RegisterController::class,'create']);
@@ -42,9 +46,7 @@ Route::get('/redacoes',function(){
     return view('redacoes');
 });
 
-Route::get('/login',function(){
-    return view('login');
-});
+
 
 Route::get('/quemsomos',function(){
     return view('quemsomos');
