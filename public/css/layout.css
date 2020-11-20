@@ -1,0 +1,200 @@
+
+#tela {
+    width: 100%;
+    height: auto;
+    margin-left: -15px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #7ecd4b;
+    font-weight: bolder;
+    font-family: Yu Gothic;
+    font-size: 20px;
+}
+
+.navbar-light {
+    border-bottom: solid 6pt #7ecd4b;
+}
+
+.bg-dark-green {
+    background-color: #42513a;
+}
+
+#header {
+    background-image: url("/img/cabecalho.png");
+    background-color: white;
+    background-size: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #ccccccff;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+}
+
+#rettop {
+    width: 50%;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 50px;  
+}
+
+#retescolha {
+    width: 50%;
+    height: 190px;
+    background-color: #5aa02cff;
+    margin: 0 auto;
+    border: solid #488123ff;
+    padding-top: 50px;
+    position: relative;
+}
+
+#coluna1 {
+    float: left;
+    height: 133%;
+    width: 45%;
+    margin-top: -50px;
+}
+
+.escolhido {
+  border-radius: 4px;
+  padding: 4%;
+  width: 300px;
+}
+
+#coluna2 {
+    float: left;
+    height: 133%;
+    width: 55%;
+    margin-top: -50px;
+}
+
+.Fixo{
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Universidades {
+    color: white;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.0;
+    text-shadow: 10px;
+}
+
+#retmenu {
+    width: 50%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.menu1 {
+    z-index: 1;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.menu2 {
+    z-index: 2;
+    position: absolute;
+    top: -112px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.textomenu {
+    margin-top: 8px;
+    margin-left: 58px;
+    position: absolute;
+    z-index: 3;
+    color: black;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textoprova {
+    margin-top: 10px;
+    margin-left: 30%;
+    line-height: 0.6;
+    position: absolute;
+    z-index: 3;
+    color: #5aa02cff;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textogabarito {
+    margin-top: 10px;
+    margin-left: 60%;
+    line-height: 0.6;
+    position: absolute;
+    z-index: 3;
+    color: #5aa02cff;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.textomenu2 {
+    margin-top: 106px;
+    margin-left: 60px;
+    position: absolute;
+    z-index: 3;
+    color: black;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textoprova2 {
+    margin-top: 95px;
+    margin-left: 30%;
+    line-height: 0.6;
+    position: absolute;
+    z-index: 3;
+    color: #5aa02cff;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textogabarito2 {
+    margin-top: 95px;
+    margin-left: 60%;
+    line-height: 0.6;
+    position: absolute;
+    z-index: 3;
+    color: #5aa02cff;
+    text-align: center;
+    font-family: Yu Gothic;
+    font-size: 20px;
+    font-weight: bold;
+}
+

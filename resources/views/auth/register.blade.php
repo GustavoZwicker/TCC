@@ -61,7 +61,7 @@
                     <div id=retangulo>
                     <h1> CADASTRO </h1>
                 
-                    <form action="{{ route('register') }}" method="POST">
+                    <form action="cadastro" method="POST">
                     @csrf
                     <div class="categorias">
                         <label>Nome</label>

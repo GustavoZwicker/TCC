@@ -19,13 +19,11 @@ Route::post('user',[LoginController::class,'login']);
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::view('cadastro','cadastro');
+Route::view('cadastro','Auth/register');
 Route::post('cadastro',[RegisterController::class,'create']);
 
-Route::get('/',function(){
-    return view('home');
-});
-
+Route::view('/','home');
+Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
 Route::get('/welcome',function(){
     return view('welcome');
 });
@@ -46,7 +44,10 @@ Route::get('/redacoes',function(){
     return view('redacoes');
 });
 
-
+Route::get('/debug',function(){
+    
+    return var_dump($debug);
+});
 
 Route::get('/quemsomos',function(){
     return view('quemsomos');
@@ -62,4 +63,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

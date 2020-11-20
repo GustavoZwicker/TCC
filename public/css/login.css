@@ -183,9 +183,11 @@ h1{
 }
 
 .cadastrese{    
+    position: absolute;
     font-size: 22px;
     font-style:none;
     color: white;
+    margin-left: 535px;
 }
 
 .form-check-input{

@@ -87,6 +87,9 @@
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
+                                    <div class="col-sm">
+                                        <a class="cadastrese" href="/cadastro">Não tem um conta? Cadastre-se </a>
+                                        </div>
                             <div class="col-sm">
                                 <button class="botao" type="submit" value="LOGIN">
                                     {{ __('Login') }}

@@ -1,8 +1,8 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('title','Home')
 
-@section('stylesheet','/css/home.css')
+@section('style','/css/home.css')
 
 @section('content')
 
@@ -29,21 +29,21 @@
                             </div>
                         <a class=next><img src="/img/seta.png"> </a>
                     </div>
-                    <div id=row>
+                    <div id=colubg>
                         <div id=colu1>
                             <img class=coluimg src="/img/unesplogo.png">
-                            <h1>Universidade Estadual <br>Paulista</    br></h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
+                            <h1>Universidade Estadual Paulista</h1>
+                            <h2><a href= "/welcome"><br>Mais informações</a><h2>
                         </div>
                         <div id=colu2>
                             <img class=coluimg src="/img/unesplogo.png">
                             <h1>Universidade Estadual Paulista</h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
+                            <h2><a href= "/welcome"><br>Mais informações</a><h2>
                         </div>
                         <div id=colu3>
                             <img class=coluimg src="/img/unesplogo.png">
                             <h1 class=shit>Universidade Estadual Paulista</h1>
-                            <h2><a href= "/welcome">Mais informações</a><h2>
+                            <h2><a href= "/welcome"><br>Mais informações</a><h2>
                         </div>
                     </div>
 @endsection
