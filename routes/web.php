@@ -57,10 +57,6 @@ Route::get('/ex',function(){
     return view('ex');
 });
 
-Route::get('/teste',function(){
-    return view('teste');
-});
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
