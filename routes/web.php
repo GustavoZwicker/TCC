@@ -57,6 +57,7 @@ Route::get('/ex',function(){
     return view('ex');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
