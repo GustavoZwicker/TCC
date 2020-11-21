@@ -8,62 +8,9 @@
     margin: auto;
 }
 
-#headerph {
-    width: 100%;
-    height: 124px;
-    position: relative;
-}
-
-#cabecalho {
-    background-image: url("/img/cabecalho.png");
-    background-color: white;
-    background-size: 100%;
-    width: 100%;
-    height: 114px;
-    margin-top: -10px;
-    padding-top: 10px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-y: left;
-    position: sticky;
-}
-
 #content {
     width: 100%;
     height: 600px;
-}
-
-#menu {
-    width: 99,5%;   
-    height: 40px;
-    position: absolute;
-    margin-left: 8px;
-    margin-right: auto;
-    
-}
-
-.prev, .next{
-    display: inline-block;
-    width: 42x;
-    height: 50px;
-    opacity: 50%;
-    margin-top: -50px;
-    vertical-align: middle;
-}
-
-.prev:hover, .next:hover{
-    opacity: 100%;
-    cursor: pointer;
-}
-
-
-.prev img{
-    transform: scaleX(-1);
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .links{
