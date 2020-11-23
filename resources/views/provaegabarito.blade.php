@@ -1,4 +1,10 @@
+@extends('layouts.template')
 
+@section('title','Cadastro')
+
+@section('style','/css/cadastro.css')
+
+@section('content')
 
 
 <div id=rettop>
@@ -46,3 +52,5 @@
         <p><a href="/img/USP2019g.pdf" download="">Prova2018.pdf</a></p>
     </div>
 </div>         
+
+@endsection
