@@ -39,7 +39,7 @@
                                         {{ __('Lembre de mim') }}
                                     </label>
                                     <div class="col-sm">
-                                        <a class="cadastrese" href="/cadastro">Não tem uma conta? Cadastre-se </a>
+                                        <a class="cadastrese" href="/register">Não tem uma conta? Cadastre-se </a>
                                         </div>
                             <div class="col-sm">
                                 <button class="botao" type="submit" value="LOGIN">

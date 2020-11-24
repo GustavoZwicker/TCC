@@ -27,6 +27,6 @@ class HomeController extends Controller
     {
         $universidade = Universidade::get();
         $user = Auth::User();
-        return view('home',compact('user'),['Universidades',$universidade]);
+        return view('home',compact('user'))->with('universidades',$universidade);
     }
 }

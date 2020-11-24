@@ -56,8 +56,8 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'genero' => ['required', 'integer', 'min:8'],
-            'data_de_nasc' => ['required', 'date'],
+            'genre' => ['required', 'integer', 'min:8'],
+            'birthday' => ['required', 'date'],
         ]);
     }
 
@@ -72,8 +72,8 @@ class RegisterController extends Controller
             User::create([
                 'name' => $data['name'],
                 'email' => $data['email'],
-                'genero' => $data['genre'],
-                'data_de_nasc' => $data['birthday'],
+                'genre' => $data['genre'],
+                'birthday' => $data['birthday'],
                 'password' => Hash::make($data['password'])
             ]);
             return redirect()->intended('home');
