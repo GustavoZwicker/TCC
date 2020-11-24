@@ -1,0 +1,84 @@
+@import url("/css/template.css");
+
+#head-top{
+    width: 10px;
+    height: 20px;  
+    margin-top: 20px;
+  
+}
+
+.head-top2{
+    padding-top: 10px;
+  
+}
+
+#retangulo{
+    width: 975px;
+    background-color: #5aa02cff;
+    height: 300px;
+    border:  10px solid #488123ff;
+    top: 38px;
+    margin: auto; 
+    z-index: 2;}
+
+h1{ 
+    text-align: center;
+    margin-top: 5px;
+    color:white;
+}
+
+.categorias {
+    margin-left: 20px;
+    color: white;
+    line-height: 30px;
+
+    font-size: 25px;
+}
+
+.categorias input[type=text] {
+    margin-left: 20px;
+    height: 40px;
+    width: 830px;
+}
+
+.cadastrese{    
+    position: absolute;
+    font-size: 22px;
+    font-style:none;
+    color: white;
+    margin-left: 535px;
+}
+
+.esqueceu{    
+    font-size: 22px;
+    font-style:none;
+    color: white;
+}
+
+.form-check-input{
+    position: absolute;
+    margin-left: 680px;
+    margin-top: -25px;
+
+}
+.form-check-label{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: -40px;
+}
+
+.botao {
+    position: absolute;
+    font-size: 25px;
+}
+
+.rpass{
+    font-size: 25px;
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+.esquerda{
+    text-align: left;
+}
