@@ -1,4 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.template')
+
+@section('title','Login?')
+
+@section('style','/css/login.css')
 
 @section('content')
 <div class="container">
@@ -14,7 +18,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('Você está logado!') }}
                 </div>
             </div>
         </div>
