@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\UniversidadeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,14 +20,16 @@ Route::post('user',[LoginController::class,'login']);
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::view('cadastro','Auth/register');
+Route::view('cadastro','Auth.register');
 Route::post('cadastro',[RegisterController::class,'create']);
 
+Route::view('/home',[HomeController::class,'index']);
 Route::view('/','home');
 Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
-Route::get('/welcome',function(){
-    return view('welcome');
-});
+
+Route::view('adduni','admin.adduniversidade');
+Route::post('adduni',[UniversidadeController::class,'create']);
+
 
 Route::get('/provaegabarito',function(){
     return view('provaegabarito');
@@ -57,15 +60,6 @@ Route::get('/ex',function(){
     return view('ex');
 });
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

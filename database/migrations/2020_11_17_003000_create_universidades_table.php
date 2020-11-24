@@ -16,12 +16,12 @@ class CreateUniversidadesTable extends Migration
         Schema::create('universidades', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('sigla');
-            $table->string('nome');
+            $table->string('initials');
+            $table->string('name');
             $table->string('site');
             $table->string('local');
             $table->string('logo');
-            $table->string('edital');
+            $table->string('edict');
         });
     }
 

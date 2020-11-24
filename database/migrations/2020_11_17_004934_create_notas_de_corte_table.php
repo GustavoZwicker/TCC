@@ -17,7 +17,7 @@ class CreateNotasDeCorteTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('link');
-            $table->integer('data');
+            $table->integer('date');
             $table->integer('universidades_id')->unsigned();
             $table->foreign('universidades_id')->references('id')->on('universidades');
         });

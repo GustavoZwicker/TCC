@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Universidade;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
@@ -24,7 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $universidade = Universidade::get();
         $user = Auth::User();
-        return view('home',compact('user'));
+        return view('home',compact('user'),['Universidades',$universidade]);
     }
 }
