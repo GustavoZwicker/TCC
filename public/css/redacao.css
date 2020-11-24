@@ -1,13 +1,16 @@
 @import url("/css/template.css");
 
+#content {
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
 #retangulo {
     position: relative;
-    display:inline-block;
     width: 950px;
     height: 130px;
+    margin-top: 50px;
     background-color: #5aa02cff;
-    margin-top: 80px;
-    margin-left: 480px;
     border: solid #488123ff;
 }
 
@@ -15,48 +18,20 @@
     position: absolute; 
 }
 
-#rodape{
-    position: relative;
-    width: 100%;
-    height: 70px;
-    background-color: #42513aff;
-    align-self: flex-start;
-    font-family: Arial;
-    font-size: 12px;
-    color: white;
-}
-
-.rodapeinfo{
-    position: relative;
-    padding-top: 15px;
-    margin-left: 10px;
-
-}
-
-.rodapeinfo2{
-    position: relative;
-    text-align: right;
-    margin-top: 15px;
-    margin-right: 10px;
-    padding-bottom: 5px;
-}
-
-.column {
-    float: left;
-    height: 70px;
-    width: 50%;
-}
-
 .divisao {
+    float: left;
+}
+
+.arrumar {
     margin-top: 20px;
     margin-left: 10px;
     height: 70px;
     width: 16%;
 }
+
 h2 {
     position: relative;
     margin-top: -5px;
-    margin-left: 20px;
     font-family: YU Gothic;
     font-size: 30px;
     color: white
@@ -64,8 +39,7 @@ h2 {
 
 h3 {
     position: relative;
-    margin-top: 30px;
-    margin-left: 45px;
+    margin-top: 35px;
     font-family: YU Gothic;
     font-size: 25px;
     color: white
@@ -82,8 +56,8 @@ h4 {
 
 h5 {
     position: relative;
-    margin-top: 18px;
-    margin-left: 80px;
+    margin-top: 85px;
+    margin-left: -255px;
     font-family: YU Gothic;
     font-size: 25px;
     color: white
@@ -91,20 +65,15 @@ h5 {
 
 #redretangulo {
     position: relative;
-    display:inline-block;
+    margin-top: 20px;
     width: 860px;
     height: auto;
     background-color: rgb(229, 236, 225);
-    margin-top: 10px;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    margin-left: 526px;
     border: solid #b1e192ff;
 }
 
 #redfix {
     position: relative;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
