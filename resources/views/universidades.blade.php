@@ -7,7 +7,7 @@
 @section('content')
 
                     
-                    <div>
+                    <div id =espaco></div>
                     <div id=retangulo>
                     <div class="univer">
                     UNIVERSIDADE DE SÃO PAULO <p>(USP)</p>
