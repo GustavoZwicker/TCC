@@ -1,133 +1,12 @@
-* { margin: 0; padding: 0; }
-
-#tela {
-    width: 100%;
-    height: auto;
-    margin-left: -15px;
-    overflow: hidden;
-    margin: auto;
-}
-
-#headerph {
-    width: 100%;
-    height: 124px;
-    position: relative;
-}
-
-#cabecalho {
-    background-image: url("/img/cabecalho.png");
-    background-color: white;
-    background-size: 100%;
-    width: 100%;
-    height: 114px;
-    margin-top: -10px;
-    padding-top: 10px;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-y: left;
-    position: sticky;
-}
+@import url("/css/template.css");
 
 #content {
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
-#menu {
-    width: 99,5%;   
-    height: 40px;
-    position: absolute;
-    margin-left: 8px;
-    margin-right: auto;
-    
-}
-
-.prev, .next{
-    display: inline-block;
-    width: 42x;
-    height: 50px;
-    opacity: 50%;
-    margin-top: -50px;
-    vertical-align: middle;
-}
-
-.prev:hover, .next:hover{
-    opacity: 100%;
-    cursor: pointer;
-}
-
-
-.prev img{
-    transform: scaleX(-1);
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.links{
-    margin-left: 30px;
-    margin-top: 3px;
-    vertical-align: middle;
-}
-
-.links a{
-    font-family: Yu Gothic;
-    color: #7ecd4bff;
-    font-weight: bolder;
-    font-size: 20px;
-    text-decoration: none; 
-    margin-inline-end: 80px;
-
-}
-
-input[type=text]{
-    position: relative;
-    width: 40%;
-    height: 23px;
-    border: solid #5aa02cff;
-    background-color: white;
-    font-family: Nirmala UI;
-    font-size: 20px;
-    color: black;
-    position: absolute;
-}
-
-input[type=submit]{
-    background:url("/img/lupa.png");
-    width: 19px;
-    height: 24px;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 38.5%;
-    margin-top: 4px;
-}
-
-#rodape{
-    width: 100%;
-    height: 70px;
-    background-color: #42513aff;
-    align-self: flex-start;
-    font-family: Arial;
-    font-size: 12px;
-    margin-top: 50px;
-    color: white;
-    
-}
-
-.rodapeinfo{
-    padding-top: 15px;
-    margin-left: 10px;
-
-}
-
-.rodapeinfo2{
-    text-align: right;
-    margin-top: 15px;
-    margin-right: 10px;
-    padding-bottom: 5px;
+#espaco {
+    margin-top: 10px;
 }
 
 .column {
@@ -143,31 +22,29 @@ input[type=submit]{
   
 }
 
-.input-group {
-    position: absolute;
-    margin-left: 1100px;
-}
-
 .head-top2{
     padding-top: 10px;
   
 }
 
 #retangulo{
+    line-height: 43px;
     width: 975px;
     background-color: #5aa02cff;
     height: 310px;
     border:  10px solid #488123ff;
     top: 38px;
     margin: auto; 
-    z-index: 2;}
+    z-index: 1;
+
+}
 
 .img img{
     border:  5px solid  #d6e6cbff;
     margin-top: -305px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: -500px;
+    
 }
 
 .univer{
