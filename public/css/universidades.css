@@ -44,7 +44,8 @@
     margin-top: -305px;
     margin-bottom: 20px;
     margin-left: -500px;
-    
+    object-fit: scale-down;
+    background-color: white;
 }
 
 .univer{

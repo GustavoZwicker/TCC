@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\UniversidadeController;
+use App\Http\Controllers\UniversidadesController;
+use App\Http\Controllers\RedacoesController;
+use App\Http\Controllers\QSomosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +26,8 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::view('cadastro','Auth.register');
 Route::post('cadastro',[RegisterController::class,'create']);
 
-Route::view('/home',[HomeController::class,'index']);
-Route::view('/','home');
+Route::view('/',[HomeController::class,'index']);
+
 Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
 
 Route::view('adduni','admin.adduniversidade');
@@ -39,22 +42,11 @@ Route::get('/redacao',function(){
     return view('redacao');
 });
 
-Route::get('/universidades',function(){
-    return view('universidades');
-});
+Route::get('/universidades',[UniversidadesController::class,'index']);
 
-Route::get('/redacoes',function(){
-    return view('redacoes');
-});
+Route::get('/redacoes',[RedacoesController::class,'index']);
 
-Route::get('/debug',function(){
-    
-    return var_dump($debug);
-});
-
-Route::get('/quemsomos',function(){
-    return view('quemsomos');
-});
+Route::get('/quemsomos',[QSomosController::class,'index']);
 
 Route::get('/ex',function(){
     return view('ex');

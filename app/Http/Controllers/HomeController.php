@@ -25,8 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $universidade = Universidade::get();
+        $universidade = Universidade::all();
         $user = Auth::User();
-        return view('home',compact('user'))->with('universidades',$universidade);
+        return view('home',compact('user'))->with(compact('universidade'));
     }
 }
