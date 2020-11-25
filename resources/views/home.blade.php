@@ -39,7 +39,7 @@
                     <div id=colubg>
                         <div id=colu1>
                             <img class=coluimg src="/img/unesplogo.png">
-                            <h1>Universidade Estadual Paulista</h1>
+                        <h1></h1>
                             <h2><a href= "/welcome"><br>Mais informações</a><h2>
                         </div>
                         <div id=colu2>

@@ -16,9 +16,9 @@ class CreateProvasTable extends Migration
         Schema::create('provas', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('ano');
-            $table->string('caminho');
-            $table->string('gabarito');
+            $table->integer('year');
+            $table->string('path');
+            $table->string('feedback');
             $table->integer('universidades_id')->unsigned();
             $table->foreign('universidades_id')->references('id')->on('Universidades');
         });

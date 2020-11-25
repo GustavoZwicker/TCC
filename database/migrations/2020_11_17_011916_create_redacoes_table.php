@@ -16,10 +16,10 @@ class CreateRedacoesTable extends Migration
         Schema::create('redacoes', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('nome');
-            $table->integer('ano');
-            $table->integer('nota');
-            $table->string('caminho');
+            $table->string('name');
+            $table->integer('year');
+            $table->integer('grade');
+            $table->string('path');
             $table->integer('universidades_id')->unsigned();
             $table->foreign('universidades_id')->references('id')->on('universidades');
         });

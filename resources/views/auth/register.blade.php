@@ -21,14 +21,14 @@
 
                         <label>Gênero</label>
                         
-                        <select name ="genero">
+                        <select name ="genre">
                         <option value ="1">Masculino</option>
                         <option value ="2">Feminino</option>
                         <option value ="3">Outro</option>
                         </select></br>
 
                         <label>Data de Nascimento</label>
-                        <input type="date" name="data_de_nasc" size="50" maxlength="10" /><br>
+                        <input type="date" name="birthday" size="50" maxlength="10" /><br>
 
                         <label>Senha</label>
                         <input type="password" name="password" size="8" minlenght ="8" maxlength="70" /></br>
