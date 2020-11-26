@@ -16,7 +16,6 @@
 
 h1 {
     margin-top: 10px;
-    position: relative;
     font-family: YU Gothic;
     font-size: 80px;
     color: #5aa02cff
@@ -25,75 +24,73 @@ h1 {
 h2 {
     margin-top: 20px;
     margin-left: -1170px;
-    position: relative;
     font-family: YU Gothic;
     font-size: 80px;
     color: #5aa02cff
 }
 
 h3 {
-    margin-top: 50px;
+    margin-top: -100px;
     margin-left: -1170px;
-    position: relative;
     font-family: YU Gothic;
     font-size: 80px;
     color: #5aa02cff
 }
 
 h4 {
-    margin-top: -455px;
+    margin-top: -656px;
     margin-left: 1160px;
-    position: relative;
     font-family: YU Gothic;
     font-size: 80px;
     color: #5aa02cff
 }
 
 h5 {
-    margin-top: -485px;
+    margin-top: -657px;
     margin-left: 1150px;
-    position: relative;
     font-family: YU Gothic;
     font-size: 80px;
     color: #5aa02cff
 }
 
 #quadrado1 {
-    position: relative;
-    margin-left: 190px;
+    margin-left: -1170px;
     width: 350px;
     height: 350px;
     background-color: #d6e6cbff;
     border: solid #488123ff;
+    display: inline-block;
 }
 
 #quadrado2 {
-    position: relative;
-    margin-left: 190px;
-    margin-bottom: 31px;
+    margin-left: -1170px;
     width: 350px;
     height: 350px;
     background-color: #d6e6cbff;
     border: solid #488123ff;
+    display: inline-block;
 }
 
 #quadrado3 {
-    position: relative;
-    margin-left: 1350px;
+    margin-left: 1150px;
     width: 350px;
     height: 350px;
     background-color: #d6e6cbff;
     border: solid #488123ff;
+    display: inline-block;
 }
 
 #quadrado4 {
-    position: relative;
-    margin-left: 1350px;
-    margin-bottom: 20px;
+    margin-left: 1150px;
     width: 350px;
     height: 350px;
     background-color: #d6e6cbff;
     border: solid #488123ff;
+    display: inline-block;
+}
+
+img {
+    margin-top: -210px;
 }
 
 #rodape{
