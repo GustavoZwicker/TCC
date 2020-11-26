@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\UserUniversidade as Favorite;
 
 class UserAuth extends Controller
 {
-    function registro(Request $req){
-        $user = new User;
-        $user->name=$req->name;
-        $user->email=$req->email;
-        $user->password=Hash::make($req->password);
-        $user->data_de_nasc=$req->data_de_nasc;
-        $user->genero=$req->genero;
-        $user->save();
-        return redirect('home');
+    protected $cid;
+    public function like(){
+        $this->cid = auth() ->guard('customer')->user()->id;
+
+        if (!Favorite::where(['universidade_id'=>$universidade_id,'user_id'=>$cid])->exists()){
+            Favorite::create(['universidade_id'=>$universidade_id,'user_id'=>$cid]);
+
+        }
+
+        return redirect()->intended('home');
     }
 }

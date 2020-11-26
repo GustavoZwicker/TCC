@@ -30,6 +30,10 @@ Route::view('/',[HomeController::class,'index']);
 
 Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
 
+Route::view('/home',[HomeController::class,'index']);
+
+Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
+
 Route::view('adduni','admin.adduniversidade');
 Route::post('adduni',[UniversidadeController::class,'create']);
 
@@ -39,7 +43,8 @@ Route::get('/provaegabarito',function(){
 });
 
 Route::get('/redacao',function(){
-    return view('redacao');
+    $user = Auth::User();
+        return view('redacao',compact('user'));
 });
 
 Route::get('/universidades',[UniversidadesController::class,'index']);
