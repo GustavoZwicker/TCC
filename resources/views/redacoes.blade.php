@@ -13,18 +13,22 @@
 
                 <h2>ENEM</h2>
                 <div id = quadrado1> 
+                    <img src="/img/red_enem_pequena.png" alt="">
                 </div>
 
-                <h4>VUNESP</h4>
+                <h4>FUVEST</h4>
                 <div id = quadrado3>
+                    <img src="/img/red_fuvest_pequena.png" alt="">
                 </div>
                     
-                <h3>UEL</h3>
+                <h3>UNICAMP</h3>
                 <div id = quadrado2>
+                    <img src="/img/red_unicamp_pequena.png" alt="">
                 </div>
 
-                <h5>Fuvest</h5>
+                <h5>PUC-RJ</h5>
                 <div id = quadrado4>
+                    <img src="/img/red_puc_pequena.png" alt="">
                 </div>
             </div>
 @endsection
