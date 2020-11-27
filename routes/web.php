@@ -8,6 +8,8 @@ use App\Http\Controllers\UniversidadesController;
 use App\Http\Controllers\RedacoesController;
 use App\Http\Controllers\QSomosController;
 use App\Http\Controllers\UserAuth;
+
+use App\Models\Universidade;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,6 +39,12 @@ Route::post('adduni',[UniversidadeController::class,'create']);
 Route::get('/provaegabarito',function(){
     $user = Auth::User();
     return view('provaegabarito',compact('user'));
+});
+
+Route::get('/provaegabarito/{name}',function($name){
+    $universidade = Universidade::find($name);
+        $user = Auth::User();
+        return view('provaegabarito',compact('user'))->with(compact('universidade'));
 });
 
 Route::get('/redacao',function(){
