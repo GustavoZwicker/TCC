@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class UserUniversidade extends Migration
+class CreateFavoritos extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,14 @@ class UserUniversidade extends Migration
      */
     public function up()
     {
-        Schema::create('UserUniversidade', function (Blueprint $table) {
+        Schema::create('favoritos', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('universidade_id')->unsigned();
             $table->integer('user_id');
-            $table->foreign('universidade_id')
-                ->references('id')->on('universidades')
+            $table->integer('universidade_id')->unsigned();
+            $table->foreign('universidade_id')->references('id')->on('universidades');
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -30,6 +28,6 @@ class UserUniversidade extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('UserUniversidade');
+        Schema::dropIfExists('Favoritos');
     }
 }
