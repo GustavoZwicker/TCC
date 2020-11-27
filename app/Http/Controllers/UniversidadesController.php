@@ -15,7 +15,7 @@ class UniversidadesController extends Controller
         $user = Auth::User();
         $id = Auth::id();
         if(Auth::check()){
-        $favorito = Favorito::where('user_id',$id)->get();
+        $favorito = Favorito::where('user_id',$id)->first();
         $universidade = Universidade::all();
         return view('universidades',compact('user'))->with(compact('universidade'))->with(compact('favorito'));
         
