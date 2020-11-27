@@ -15,7 +15,7 @@
     width: 50%;
   }
 
-#head-top{
+.head-top{
     width: 10px;
     height: 20px;  
     margin-top: 20px;
@@ -27,7 +27,7 @@
   
 }
 
-#retangulo{
+.retangulo{
     line-height: 43px;
     width: 975px;
     background-color: #5aa02cff;
@@ -36,6 +36,7 @@
     top: 38px;
     margin: auto; 
     z-index: 1;
+    float: right;
 
 }
 
@@ -60,15 +61,15 @@
 input[type=checkbox].css-checkbox{ display: none; }
 
 .css-label{
-    margin-left: 1152px;
-    margin-top:-131px;
     display: flex;
     opacity: 50%;
     height:131px;
-    position: initial;
     background-image: url(/img/estrelinha.png);
     background-repeat: no-repeat;
     background-size: contain;
+    left: 0;
+    margin-top: 220px;
+    margin-left: -31px;
 
 }
 

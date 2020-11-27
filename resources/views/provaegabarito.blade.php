@@ -2,7 +2,7 @@
 
 @section('title','Cadastro')
 
-@section('style','/css/cadastro.css')
+@section('style','/css/provaegabarito.css')
 
 @section('content')
 

@@ -7,7 +7,7 @@ use App\Http\Controllers\UniversidadeController;
 use App\Http\Controllers\UniversidadesController;
 use App\Http\Controllers\RedacoesController;
 use App\Http\Controllers\QSomosController;
-
+use App\Http\Controllers\UserAuth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,34 +23,34 @@ Route::post('user',[LoginController::class,'login']);
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
-Route::view('cadastro','Auth.register');
-Route::post('cadastro',[RegisterController::class,'create']);
-
 Route::view('/',[HomeController::class,'index']);
+
+Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
+
+Route::view('/home',[HomeController::class,'index']);
 
 Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
 
 Route::view('adduni','admin.adduniversidade');
 Route::post('adduni',[UniversidadeController::class,'create']);
 
-
 Route::get('/provaegabarito',function(){
-    return view('provaegabarito');
+    $user = Auth::User();
+    return view('provaegabarito',compact('user'));
 });
 
 Route::get('/redacao',function(){
-    return view('redacao');
+    $user = Auth::User();
+        return view('redacao',compact('user'));
 });
+
+
 
 Route::get('/universidades',[UniversidadesController::class,'index']);
 
 Route::get('/redacoes',[RedacoesController::class,'index']);
 
 Route::get('/quemsomos',[QSomosController::class,'index']);
-
-Route::get('/ex',function(){
-    return view('ex');
-});
 
 Auth::routes();
 
