@@ -16,14 +16,4 @@ class Universidade extends Model
         'logo',
         'edict',
     ];
-    
-    public function favorite(){
-
-        $cid = auth()->guard('User')->user()!=null ? auth()->guard('User')->user()->id : null;
-        return $this->belongTo(UserUniversidade::class,'id','universidade_id')->where('user_id',$cid);
-    }
-
-    public function like(){
-        return $this->favorite()->selectRaw('universidade_id,count(*) as count')->groupBy('universidade_id');
-    }
 }
