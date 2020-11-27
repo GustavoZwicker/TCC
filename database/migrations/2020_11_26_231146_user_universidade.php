@@ -20,7 +20,6 @@ class UserUniversidade extends Migration
             $table->integer('user_id');
             $table->foreign('universidade_id')
                 ->references('id')->on('universidades')
-                ->onDelete('cascade');
         });
     }
 
@@ -31,6 +30,6 @@ class UserUniversidade extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('UserUniversidade');
     }
 }

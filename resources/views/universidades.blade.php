@@ -30,7 +30,6 @@
             <div class=col-sm-4>
                 <input id="checkbox{{ $uni->id }}" type="checkbox" value="{{ $uni->id }}" class="css-checkbox">
                 <label for="checkbox{{ $uni->id }}" class="css-label"></label>
-
             </div>
             <div class=head-top2> </div>
         @endforeach
