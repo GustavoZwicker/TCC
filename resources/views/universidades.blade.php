@@ -18,7 +18,7 @@
                         {{ $uni->name }}
                         <p>({{ $uni->initials }})</p>
                         <p><br>Local: <span style="color: #ccccccff;">{{ $uni->local }}</span></p>
-                        <p><a href="http://127.0.0.1:8000/provaegabarito/{{ $uni->initials }}">
+                        <p><a href="http://127.0.0.1:8000/provaegabarito/{{ $uni->id }}">
                                 <div class="maisinfo"> MAIS INFORMAÇÕES </div>
                             </a> </p>
                     </div>
