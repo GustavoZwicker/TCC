@@ -1,0 +1,79 @@
+@import url("/css/template.css");
+
+#content {
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+#retangulo {
+    position: relative;
+    width: 950px;
+    height: 130px;
+    margin-top: 50px;
+    background-color: #5aa02cff;
+    border: solid #488123ff;
+}
+
+#retangulo img {
+    position: absolute; 
+}
+
+.divisao {
+    float: left;
+}
+
+.arrumar {
+    margin-top: 20px;
+    margin-left: 10px;
+    height: 70px;
+    width: 16%;
+}
+
+h2 {
+    position: relative;
+    margin-top: -5px;
+    font-family: YU Gothic;
+    font-size: 30px;
+    color: white
+}
+
+h3 {
+    position: relative;
+    margin-top: 33px;
+    font-family: YU Gothic;
+    font-size: 25px;
+    color: white
+} 
+
+h4 {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: YU Gothic;
+    font-size: 30px;
+    color: white
+} 
+
+h5 {
+    position: relative;
+    margin-top: 83px;
+    margin-left: -398px;
+    font-family: YU Gothic;
+    font-size: 25px;
+    color: white
+}
+
+#redretangulo {
+    position: relative;
+    margin-top: 20px;
+    width: 860px;
+    height: auto;
+    background-color: rgb(229, 236, 225);
+    border: solid #b1e192ff;
+}
+
+#redfix {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

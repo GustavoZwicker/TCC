@@ -47,12 +47,25 @@ Route::get('/provaegabarito/{name}',function($name){
         return view('provaegabarito',compact('user'))->with(compact('universidade'));
 });
 
-Route::get('/redacao',function(){
+Route::get('/redacao_fuv',function(){
     $user = Auth::User();
-        return view('redacao',compact('user'));
+        return view('redacao_fuv',compact('user'));
 });
 
+Route::get('/redacao_puc',function(){
+    $user = Auth::User();
+        return view('redacao_puc',compact('user'));
+});
 
+Route::get('/redacao_unicamp',function(){
+    $user = Auth::User();
+        return view('redacao_unicamp',compact('user'));
+});
+
+Route::get('/redacao_enem',function(){
+    $user = Auth::User();
+        return view('redacao_enem',compact('user'));
+});
 
 Route::get('/universidades',[UniversidadesController::class,'index']);
 
