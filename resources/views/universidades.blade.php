@@ -1,3 +1,4 @@
+
 @extends('layouts.template')
 
 @section('title', 'universidades')
@@ -30,10 +31,17 @@
             <div class=col-sm-4>
                 <input id="checkbox{{ $uni->id }}" type="checkbox" value="{{ $uni->id }}" class="css-checkbox">
                 <label for="checkbox{{ $uni->id }}" class="css-label"></label>
+                <form name='teste' method="POST" action=@if ($favorito->universidade_id == $uni->id && $favorito->user_id == $user->id)
+                    'desfavoritado'
+                @else
+                    'favoritado'
+                @endif
+                > @csrf
+            <input value="{{$uni->id}}" type="hidden"  name='universidade_id'>
+            <input value="{{$user->id}}" type="hidden"  name='user_id'>
+            <input type="submit" value="submit">
+                </form>
             </div>
-            <div class=head-top2> </div>
-        @endforeach
-    </div>
-
-
+            @endforeach
+        </div>
 @endsection

@@ -7,7 +7,8 @@ use App\Http\Controllers\UniversidadeController;
 use App\Http\Controllers\UniversidadesController;
 use App\Http\Controllers\RedacoesController;
 use App\Http\Controllers\QSomosController;
-use App\Http\Controllers\UserAuth;
+use App\Http\Controllers\FavoriteController;
+use Illuminate\Support\Facades\Auth;
 
 use App\Models\Universidade;
 /*
@@ -47,14 +48,35 @@ Route::get('/provaegabarito/{name}',function($name){
         return view('provaegabarito',compact('user'))->with(compact('universidade'));
 });
 
-Route::get('/redacao',function(){
+Route::get('/redacao_fuv',function(){
+    $user = Auth::User();
+        return view('redacao_fuv',compact('user'));
+});
+
+Route::get('/redacao_puc',function(){
+    $user = Auth::User();
+        return view('redacao_puc',compact('user'));
+});
+
+Route::get('/redacao_unicamp',function(){
+    $user = Auth::User();
+        return view('redacao_unicamp',compact('user'));
+});
+
+Route::get('/redacao_enem',function(){
+    $user = Auth::User();
+        return view('redacao_enem',compact('user'));
+});
+Route::post('favoritado',[FavoriteController::class,'favorite']);
+Route::post('desfavoritado',[FavoriteController::class,'destroy']);
+
+Route::get('/universidades',[UniversidadesController::class,'index']);
+
+Route::get('/universidade/{id}',function($id){
+    $universidade = Universidade::find($id);
     $user = Auth::User();
         return view('redacao',compact('user'));
 });
-
-
-
-Route::get('/universidades',[UniversidadesController::class,'index']);
 
 Route::get('/redacoes',[RedacoesController::class,'index']);
 

@@ -33,11 +33,11 @@
     </div>
     <div class="textoprova"> 
         <p>Prova</p> 
-        <p><a href="/img/USP2019p.pdf" download>Prova2019.pdf</a></p>
+        <p><a href="/img/provas/USP2019p.pdf" download>Prova2019.pdf</a></p>
     </div>
     <div class="textogabarito"> 
         <p>Gabarito</p> 
-        <p><a href="/img/USP2019g.pdf">Prova2019.pdf</a></p>
+        <p><a href="/img/provas/USP2019g.pdf">Prova2019.pdf</a></p>
     </div>
     <img class="menu2" src="/img/menu1.png">
     <div class="textomenu2">
@@ -45,11 +45,11 @@
     </div>
     <div class="textoprova2"> 
         <p>Prova</p> 
-        <p><a href="/img/USP2018p.pdf">Prova2018.pdf</a></p>
+        <p><a href="/img/provas/USP2018p.pdf">Prova2018.pdf</a></p>
     </div>
     <div class="textogabarito2"> 
         <p>Gabarito</p> 
-        <p><a href="/img/USP2019g.pdf" download="">Prova2018.pdf</a></p>
+        <p><a href="/img/provas/USP2019g.pdf" download="">Prova2018.pdf</a></p>
     </div>
 </div>         
 

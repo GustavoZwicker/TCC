@@ -11,5 +11,12 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+
+    public function checkarray($ar){
+        foreach ($ar as $row){
+            echo $row['id'];
+        }
+
+    }
     
 }
