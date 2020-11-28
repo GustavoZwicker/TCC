@@ -5,6 +5,7 @@
 @section('style','/css/home.css')
 
 @section('content')
+<?php $i=0?>
                 <center>
                 <div id="Tamanho_carrossel">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -37,7 +38,7 @@
                 </center>
                     <div id=colubg>
                     @if (Auth::check())
-                    <?php $i=0?>
+        
                     @foreach ($fav as $favorito)
                     @if($i < 3)
                         <div id=colu1>
