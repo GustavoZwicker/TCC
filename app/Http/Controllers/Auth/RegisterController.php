@@ -76,6 +76,6 @@ class RegisterController extends Controller
                 'birthday' => $data['birthday'],
                 'password' => Hash::make($data['password'])
             ]);
-            return redirect()->intended('home');
+            return redirect()->intended('/');
         }
 }
