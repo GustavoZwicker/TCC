@@ -18,11 +18,7 @@ class FavoriteController extends Controller
 
     public function destroy(Request $data)
     {   
-
-                Favorito::destroy([
-                    'universidade_id' => $data['universidade_id'],
-                    'user_id' => $data['user_id'],
-                ]);
+                Favorito::where('user_id',$data['user_id'])->where('universidade_id',$data['universidade_id'])->delete();
                 return redirect()->intended('universidades');
             }
 

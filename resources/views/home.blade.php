@@ -36,20 +36,31 @@
                 </div>
                 </center>
                     <div id=colubg>
+                    @if (Auth::check())
+                    <?php $i=0?>
+                    @foreach ($fav as $favorito)
+                    @if($i < 3)
                         <div id=colu1>
-                            <img class=coluimg src="{{$universidade[0]['logo']}}">
-                        <h1>{{$universidade[0]['name']}}</h1>
-                            <h2><a href= "/universidade/{{$universidade[0]['initials']}}"><br>Mais informações</a><h2>
+                            <img class=coluimg src="/{{$universidade[$favorito->universidade_id-1]['logo']}}">
+                        <h1>{{$universidade[$favorito->universidade_id-1]['name']}}</h1>
+                            <h2><a href= "/universidade/{{$universidade[$favorito->universidade_id-1    ]['initials']}}"><br>Mais informações</a><h2>
                         </div>
-                        <div id=colu2>
-                            <img class=coluimg src="{{$universidade[1]['logo']}}">
-                            <h1>{{$universidade[1]['logo']}}</h1>
-                            <h2><a href= "/universidade/{{$universidade[1]['initials']}}"><br>Mais informações</a><h2>
-                        </div>
-                        <div id=colu3>
-                            <img class=coluimg src="{{$universidade[2]['logo']}}">
-                            <h1>{{$universidade[2]['logo']}}</h1>
-                            <h2><a href= "/universidade/{{$universidade[2]['initials']}}"><br>Mais informações</a><h2>
-                        </div>
+                    <?php $i++;
+                    unset($filtro['id'][($favorito->universidade_id)-1]); ?>
+                    @endif
+                    @endforeach
+                    @endif
+                    @while($i < 3)
+                    <?php $id = array_rand($filtro['id']); $i++?>
+                    <div id=colu1>
+                        <img class=coluimg src="/{{$universidade[$id]['logo']}}">
+                    <h1>{{$universidade[$id]['name']}}</h1>
+                        <h2><a href= "/universidade/{{$universidade[$id]['initials']}}"><br>Mais informações</a><h2>
                     </div>
+                    <?php unset($filtro['id'][$id]) ?>
+                    @endwhile
+                    
+                    
+                    </div>
+                    
 @endsection

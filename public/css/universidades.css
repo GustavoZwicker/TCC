@@ -58,11 +58,10 @@
     color: white;
 }
 
-input[type=checkbox].css-checkbox{ display: none; }
+input[type=submit].css-checkbox{ display: none; }
 
 .css-label{
     display: flex;
-    opacity: 50%;
     height:131px;
     background-image: url(/img/estrelinha.png);
     background-repeat: no-repeat;
@@ -72,7 +71,9 @@ input[type=checkbox].css-checkbox{ display: none; }
     margin-left: -31px;
 
 }
-
+.css-label:hover{
+    cursor: pointer;
+}
 input[type=checkbox].css-checkbox:checked + label.css-label {
     background-position: 0 0;
     background-image: url(/img/estrelinha.png);

@@ -1,4 +1,3 @@
-
 @extends('layouts.template')
 
 @section('title', 'universidades')
@@ -6,7 +5,6 @@
 @section('style', '/css/universidades.css')
 
 @section('content')
-
 
     <div id=espaco></div>
     <div class=row>
@@ -28,20 +26,26 @@
                     </div>
                 </div>
             </div>
-            <div class=col-sm-4>
-                <input id="checkbox{{ $uni->id }}" type="checkbox" value="{{ $uni->id }}" class="css-checkbox">
-                <label for="checkbox{{ $uni->id }}" class="css-label"></label>
-                <form name='teste' method="POST" action=@if ($favorito->universidade_id == $uni->id && $favorito->user_id == $user->id)
-                    'desfavoritado'
-                @else
-                    'favoritado'
-                @endif
-                > @csrf
-            <input value="{{$uni->id}}" type="hidden"  name='universidade_id'>
-            <input value="{{$user->id}}" type="hidden"  name='user_id'>
-            <input type="submit" value="submit">
-                </form>
-            </div>
-            @endforeach
-        </div>
+            @if (Auth::check())
+                <div class=col-sm-4>
+                    <form name='teste' method="POST" action=@if (empty($favorito['universidade_id'] == true) || in_array($uni->id, $favorito['universidade_id']) == false)
+                        'favoritado'
+                    @else
+                        'desfavoritado'
+            @endif>
+            @csrf
+            <input value="{{ $uni->id }}" type="hidden" name='universidade_id'>
+            <input value="{{ $user->id }}" type="hidden" name='user_id'>
+            <input id="checkbox{{ $uni->id }}" type="submit" class="css-checkbox" value="submit">
+            <label for="checkbox{{ $uni->id }}" class="css-label" @if (empty($favorito['universidade_id'] == true) || in_array($uni->id, $favorito['universidade_id']) == false)
+                style="opacity: 50%"
+            @else
+                style="opacity: 100%"
+        @endif>
+        </label>
+        </form>
+    </div>
+    @endif
+    @endforeach
+    </div>
 @endsection

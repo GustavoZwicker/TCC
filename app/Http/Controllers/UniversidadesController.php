@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\Universidade;
 use App\Models\Favorito;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 
 class UniversidadesController extends Controller
 {
@@ -15,8 +14,10 @@ class UniversidadesController extends Controller
         $user = Auth::User();
         $id = Auth::id();
         if(Auth::check()){
-        $favorito = Favorito::where('user_id',$id)->first();
+        $fav = Favorito::where('user_id',$id)->get()->toArray();
         $universidade = Universidade::all();
+        $favorito['user_id'] = array_column($fav, 'user_id');
+        $favorito['universidade_id'] = array_column($fav, 'universidade_id');
         return view('universidades',compact('user'))->with(compact('universidade'))->with(compact('favorito'));
         
     } else {

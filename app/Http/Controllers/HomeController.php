@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Favorito;
 use App\Models\Universidade;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,6 +27,12 @@ class HomeController extends Controller
     {
         $universidade = Universidade::all();
         $user = Auth::User();
-        return view('home',compact('user'))->with(compact('universidade'));
+        $id = Auth::id();
+        $fav = Favorito::where('user_id',$id)->get();
+        $filt = Universidade::all()->toArray();
+        $universidade = Universidade::all();
+        $filtro['id'] = array_column($filt, 'id');
+  
+        return view('home',compact('user'))->with(compact('universidade'))->with(compact('fav'))->with(compact('filtro'));
     }
 }

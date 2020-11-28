@@ -2,13 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\UniversidadeController;
 use App\Http\Controllers\UniversidadesController;
 use App\Http\Controllers\RedacoesController;
 use App\Http\Controllers\QSomosController;
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Favorito;
 
 use App\Models\Universidade;
 /*
@@ -78,7 +78,6 @@ Route::get('/universidade/{id}',function($id){
         return view('redacao',compact('user'));
 });
 
-        
 Route::get('/redacoes',[RedacoesController::class,'index']);
 
 Route::get('/quemsomos',[QSomosController::class,'index']);
@@ -86,3 +85,4 @@ Route::get('/quemsomos',[QSomosController::class,'index']);
 Auth::routes();
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/teste',[HomeController::class,'index']);
