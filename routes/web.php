@@ -6,6 +6,7 @@ use App\Http\Controllers\UniversidadeController;
 use App\Http\Controllers\UniversidadesController;
 use App\Http\Controllers\RedacoesController;
 use App\Http\Controllers\QSomosController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Favorito;
@@ -23,6 +24,8 @@ use App\Models\Universidade;
 */
 Route::view('login','login');
 Route::post('user',[LoginController::class,'login']);
+
+Route::post('/cadastro',[RegisterController::class,'create']);
 
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

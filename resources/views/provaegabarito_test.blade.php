@@ -5,7 +5,7 @@
 @section('style','/css/provaegabarito.css')
 
 @section('content')
-<?php use App\Http\Controllers\Controller; ?>
+
 
 <div id=rettop>
 </div>
