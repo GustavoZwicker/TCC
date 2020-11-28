@@ -78,6 +78,7 @@ Route::get('/universidade/{id}',function($id){
         return view('redacao',compact('user'));
 });
 
+        
 Route::get('/redacoes',[RedacoesController::class,'index']);
 
 Route::get('/quemsomos',[QSomosController::class,'index']);
