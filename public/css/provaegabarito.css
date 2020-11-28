@@ -13,7 +13,7 @@
 }
 
 #retescolha {
-    width: 50%;
+    width: 700px;
     height: 190px;
     background-color: #5aa02cff;
     margin: 0 auto;
@@ -23,23 +23,17 @@
 }
 
 #coluna1 {
-    float: left;
-    height: 10%;
-    width: 45%;
-    margin-top: -35%;
+    height: 10px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: -235px;
+    position: absolute;
 }
 
 .escolhido {
   border-radius: 4px;
   padding: 4%;
   width: 300px;
-}
-
-#coluna2 {
-    float: left;
-    height: 133%;
-    width: 55%;
-    margin-top: -50px;
 }
 
 .Fixo{
@@ -51,13 +45,13 @@
     font-weight: bold;
     position: absolute;
     z-index: 5;
-    margin-top: -35%;
-    margin-left: 58%;
+    margin-top: -280px;
+    margin-left: 400px;
 }
 
 .Universidades {
-    margin-top: 10%;
-    margin-left: 48%;
+    margin-top: 20px;
+    margin-left: 330px;
     color: white;
     text-align: center;
     font-family: Yu Gothic;
@@ -69,7 +63,7 @@
 }
 
 #retmenu {
-    width: 50%;
+    width: 653px;
     height: 200px;
     margin: 0 auto;
     position: relative;
@@ -96,7 +90,7 @@
 }
 
 .textomenu {
-    margin-top: -38%;
+    margin-top: -250px;
     margin-left: 55px;
     position: absolute;
     z-index: 3;
@@ -109,7 +103,7 @@
 
 .textoprova {
     margin-top: 10px;
-    margin-left: 30%;
+    margin-left: 200px;
     line-height: 0.6;
     position: absolute;
     z-index: 3;
@@ -122,7 +116,7 @@
 
 .textogabarito {
     margin-top: 10px;
-    margin-left: 60%;
+    margin-left: 400px;
     line-height: 0.6;
     position: absolute;
     z-index: 3;
@@ -135,7 +129,7 @@
 
 
 .textomenu2 {
-    margin-top: -22%;
+    margin-top: -150px;
     margin-left: 55px;
     position: absolute;
     z-index: 3;
@@ -148,7 +142,7 @@
 
 .textoprova2 {
     margin-top: 95px;
-    margin-left: 30%;
+    margin-left: 200px;
     line-height: 0.6;
     position: absolute;
     z-index: 3;
@@ -161,7 +155,7 @@
 
 .textogabarito2 {
     margin-top: 95px;
-    margin-left: 60%;
+    margin-left: 400px;
     line-height: 0.6;
     position: absolute;
     z-index: 3;
