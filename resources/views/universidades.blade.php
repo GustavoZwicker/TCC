@@ -25,6 +25,7 @@
                         <img src="{{ $uni->logo }}" width=400px height=260px>
                     </div>
                 </div>
+                <div class=head-top> </div>
             </div>
             @if (Auth::check())
                 <div class=col-sm-4>
