@@ -11,46 +11,40 @@
 </div>
 <div id=retescolha>
     <div id=coluna1>
-        <img class="escolhido" src="/img/USP.png">
+        <img class="escolhido" src="/{{$universidade->logo}}">
     </div>
     <div id=coluna2>
         <div class="Fixo">
-        <p>
-            Provas e Gabaritos
-        </p>
+        
         </div>
         <div class="Universidades">
-            <p>UNIVERSIDADE DE SÃO PAULO</p>
-            <p>(USP)</p>
-            <p>Estado: <span style="color: #aee08dff;">São Paulo</span></p> 
+            <p>
+                Provas e Gabaritos
+            </p>
+            <p>{{$universidade->name}}</p>
+            <p>{{$universidade->initials}} &emsp;<a style="color: #aee08dff" href="{{$universidade->edict}}" download>Edital.pdf</a></p>
+            <p>Estado: <span style="color: #aee08dff;">{{$universidade->local}}</span></p>
+            
         </div>
     </div>
 </div>
 <div class="container" id=retmenu>
-    <img class="menu1" src="/img/menu1.png">
-    <div class="textomenu"> 
-        </p>2019</p>
+    @foreach ($p_data as $peg)
+    <div class="ret2">
+        <img class="menu" src="/img/menu1.png">
+        <div class="textomenu"> 
+            </p>{{$peg->year}}</p>
+        </div>
+        <div class="textoprova"> 
+            <p>Prova</p> 
+            <p><a href="/{{$peg->path}}" download>Prova.pdf</a></p>
+        </div>
+        <div class="textogabarito"> 
+            <p>Gabarito</p> 
+            <p><a href="{{$peg->feedback}}">Gabarito.pdf</a></p>
+        </div>
     </div>
-    <div class="textoprova"> 
-        <p>Prova</p> 
-        <p><a href="/img/provas/USP2019p.pdf" download>Prova2019.pdf</a></p>
-    </div>
-    <div class="textogabarito"> 
-        <p>Gabarito</p> 
-        <p><a href="/img/provas/USP2019g.pdf">Prova2019.pdf</a></p>
-    </div>
-    <img class="menu2" src="/img/menu1.png">
-    <div class="textomenu2">
-        <p>2018</p>
-    </div>
-    <div class="textoprova2"> 
-        <p>Prova</p> 
-        <p><a href="/img/provas/USP2018p.pdf">Prova2018.pdf</a></p>
-    </div>
-    <div class="textogabarito2"> 
-        <p>Gabarito</p> 
-        <p><a href="/img/provas/USP2019g.pdf" download="">Prova2018.pdf</a></p>
-    </div>
+    @endforeach
 </div>         
 
 @endsection

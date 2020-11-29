@@ -55,11 +55,12 @@
                     </li>
                 <?php } ?>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form action="/search" method="POST" class="form-inline my-2 my-lg-0">
+                    @csrf
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Pesquisar" name="data" aria-label="Search" aria-describedby="button-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                 </form>

@@ -22,11 +22,6 @@
   
 }
 
-.head-top2{
-    padding-top: 10px;
-  
-}
-
 .retangulo{
     line-height: 43px;
     width: 975px;
@@ -83,4 +78,12 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 a{
 font-style: bold;
 color:#3b691dff;
+}
+
+.erro{
+    margin: auto;
+    font-size: 40px;
+    font-family: YU Gothic;
+    font-weight: bold;
+    color: #488123ff;
 }

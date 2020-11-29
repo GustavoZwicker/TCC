@@ -11,7 +11,7 @@
 </div>
 <div id=retescolha>
     <div id=coluna1>
-        <img class="escolhido" src="{{$universidade->logo}}">
+        <img class="escolhido" src="/{{$universidade->logo}}">
     </div>
     <div id=coluna2>
         <div class="Fixo">

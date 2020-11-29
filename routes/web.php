@@ -9,7 +9,8 @@ use App\Http\Controllers\QSomosController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Favorito;
+use Illuminate\Http\Request;
+use App\Models\Prova;
 
 use App\Models\Universidade;
 /*
@@ -40,16 +41,14 @@ Route::post('/', '\App\Http\Controllers\Auth\HomeController@index');
 Route::view('adduni','admin.adduniversidade');
 Route::post('adduni',[UniversidadeController::class,'create']);
 
-Route::get('/provaegabarito',function(){
-    $user = Auth::User();
-    return view('provaegabarito',compact('user'));
-});
-
 Route::get('/provaegabarito/{name}',function($name){
     $universidade = Universidade::find($name);
-        $user = Auth::User();
-        return view('provaegabarito',compact('user'))->with(compact('universidade'));
+    $user = Auth::User();
+    $p_data = Prova::where('universidades_id',$name)->orderBy('year','DESC')->get();
+        return view('provaegabarito',compact('user'))->with(compact('universidade'))->with(compact('p_data'));
 });
+
+Route::post ( '/search',[UniversidadesController::class,'search']);
 
 Route::get('/redacao_fuv',function(){
     $user = Auth::User();
@@ -78,7 +77,7 @@ Route::get('/universidades',[UniversidadesController::class,'index']);
 Route::get('/universidade/{id}',function($id){
     $universidade = Universidade::find($id);
     $user = Auth::User();
-        return view('redacao',compact('user'));
+        return view('universidade',compact('user'))->with(compact('universidade'));
 });
 
 Route::get('/redacoes',[RedacoesController::class,'index']);

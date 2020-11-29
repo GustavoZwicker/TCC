@@ -45,11 +45,11 @@
                                 <button class="botao" type="submit" value="LOGIN">
                                     {{ __(' Login ') }}
                                 </button>
-                        </div><div class="rpass">             
+                        <!-- </div><div class="rpass">             
                                 @if (Route::has('password.request'))
                                     <a class="esqueceu" href="{{ route('password.request') }}">
                                         {{ __('Esqueceu a senha?') }}
-                                    </a> </div>
+                                    </a> </div> -->
                                 @endif
                             </div>
                             </div>
