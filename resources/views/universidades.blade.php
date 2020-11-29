@@ -8,7 +8,9 @@
 
     <div id=espaco></div>
     <div class=row>
-        <div class=erro>{{$error ?? ''}} </div>
+        @if ($error ?? '' <> NULL)
+        <div class=erro>{{$error}} </div>
+        @endif
         @foreach ($universidade as $uni)
             <div class=col-sm-8>
                 <div class=head-top> </div>
