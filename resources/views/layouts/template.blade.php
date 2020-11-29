@@ -51,7 +51,7 @@
                     </li></div></div>
                 <?php } else {?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/login">Cadastro/Login</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                 <?php } ?>
                 </ul>
