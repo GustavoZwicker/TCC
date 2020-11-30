@@ -74,12 +74,6 @@ Route::post('desfavoritado',[FavoriteController::class,'destroy']);
 
 Route::get('/universidades',[UniversidadesController::class,'index']);
 
-Route::get('/universidade/{id}',function($id){
-    $universidade = Universidade::find($id);
-    $user = Auth::User();
-        return view('universidade',compact('user'))->with(compact('universidade'));
-});
-
 Route::get('/redacoes',[RedacoesController::class,'index']);
 
 Route::get('/quemsomos',[QSomosController::class,'index']);
