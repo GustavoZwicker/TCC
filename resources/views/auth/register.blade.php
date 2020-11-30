@@ -17,7 +17,7 @@
                         <input type="text" name="name" size="70" maxlength="30" /><br>
 
                         <label>E-mail</label>
-                        <input type="text" name="email" size="70" maxlength="30"  /><br>
+                        <input type="text" name="email" size="70" maxlength="70"  /><br>
 
                         <label>Gênero</label>
                         
